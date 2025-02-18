@@ -1,0 +1,216 @@
+:root {
+    --dark: #19283f;
+    --green: #33d1cc;
+    --red: #ff3150;
+    --red-hover: #ac2237;
+    --yellow: #ffc400;
+    --section: #eff7fa;
+
+    --transition-duration: 0.5s;
+}
+body {
+    font-family: "Roboto", serif;
+    height: 5000px;
+}
+.main-btn {
+    background-color: var(--red);
+    transition: var(--transition-duration);
+    color: var(--yellow);
+}
+.main-btn:hover {
+    background-color: var(--red-hover);
+    color: var(--yellow);
+}
+.main-title::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 120px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--green);
+}
+.main-title > h2 + p {
+    font-size: 13.5px;
+}
+/* Start Nav */
+.navbar {
+    background-color: #19283f;
+}
+.navbar .nav-link {
+    color: #fff;
+    transition: var(--transition-duration);
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--green);
+}
+.navbar .search {
+    border-left: 1px solid var(--green);
+}
+.navbar .search {
+    color: var(--green);
+}
+.navbar .navbar-toggler {
+    color: white;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border: 1px solid var(--green);
+}
+/* End Nav */
+
+/* Start Landing */
+.landing {
+    background-color: var(--dark);
+    min-height: calc(100vh - 70px);
+}
+.landing h1 {
+    font-size: 55px;
+}
+/* End Landing */
+
+/* Start Features */
+.features .feat .icon-holder {
+    height: 200px;
+}
+.features .feat .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .feat .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section);
+}
+.features .feat .icon-holder .icon {
+    color: var(--green);
+}
+.features .feat h4 {
+    color: var(--yellow);
+}
+/* End Features */
+
+/* Start OurWorks */
+.our-works {
+    background-color: var(--section);
+}
+.our-works ul.categories {
+    margin: 20px auto;
+}
+.our-works ul.categories li {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .our-works ul.categories li {
+        font-size: 10px;
+    }
+}
+.our-works ul.categories li.active {
+    background-color: var(--red);
+    color: var(--yellow);
+}
+.our-works .row .box {
+    padding: 10px;
+    background-color: white;
+}
+/* End OurWorks */
+
+/* Start Stuff */
+p.description {
+    max-width: 60%;
+}
+/* End Stuff */
+
+/* Start Our Team */
+.our-team {
+    background-color: var(--section);
+}
+.our-team h2 {
+    color: var(--yellow);
+}
+.our-team .box .name {
+    color: white;
+    background-color: var(--green);
+    font-size: 20px;
+    padding: 10px 20px;
+}
+/* End Our Team */
+
+/* Start Project */
+.project {
+    background-color: var(--dark);
+}
+/* End Project */
+
+/* Start Subscribe */
+.subscribe {
+    background-color: var(--yellow);
+}
+.subscribe input[type="text"] {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]::placeholder {
+    color: white;
+    transition: var(--transition-duration);
+}
+.subscribe input[type="text"]:focus::placeholder {
+    opacity: 0;
+}
+.subscribe .main-btn {
+    background-color: var(--dark);
+    color: var(--yellow);
+}
+/* End Subscribe */
+
+/* Start Footer */
+.footer {
+    background-color: var(--dark);
+}
+.footer .info span.name {
+    color: var(--green);
+}
+.footer .info span:not(.name) {
+    color: var(--yellow);
+}
+.footer .icons li svg {
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    transition: var(--transition-duration);
+}
+
+.footer .icons li:first-child svg {
+    background-color: #1877f2;
+}
+.footer .icons li:first-child svg:hover {
+    background-color: #1876f29b;
+}
+
+.footer .icons li:nth-child(2) svg {
+    background-color: var(--green);
+}
+.footer .icons li:nth-child(2) svg:hover {
+    background-color: #33d1cc91;
+}
+
+.footer .icons li:nth-child(3) svg {
+    background-color: #0077b5;
+}
+.footer .icons li:nth-child(3) svg:hover {
+    background-color: #0076b579;
+}
+
+.footer .icons li:last-child svg {
+    background-color: var(--red);
+}
+.footer .icons li:last-child svg:hover {
+    background-color: var(--red-hover);
+}
+/* End Footer */
